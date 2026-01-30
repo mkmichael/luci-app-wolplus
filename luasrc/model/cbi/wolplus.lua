@@ -1,6 +1,6 @@
 local i = require "luci.sys"
 local t, e
-t = Map("wolplus", translate("Wake on LAN +"), translate("Wake on LAN is a mechanism to remotely boot computers in the local network.") .. [[<br/><br/><a href="https://github.com/sundaqiang/openwrt-packages" target="_blank">Powered by sundaqiang</a>]])
+t = Map("wolplus", translate("Wake on LAN +"), translate("唤醒你的局域网设备.") .. [[<br/><br/><a href="https://github.com/sundaqiang/openwrt-packages" target="_blank">Powered by sundaqiang</a>]])
 t.template = "wolplus/index"
 e = t:section(TypedSection, "macclient", translate("设备列表"))
 e.template = "cbi/tblsection"
